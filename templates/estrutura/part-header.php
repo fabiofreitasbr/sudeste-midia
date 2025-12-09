@@ -32,7 +32,7 @@
                         <a
                             href="#clientes"
                             class="text-white hover:text-indigo-900">
-                            Marcas
+                            Clientes
                         </a>
                     </li>
                     <li>
@@ -42,7 +42,7 @@
                             Contato
                         </a>
                     </li>
-                    <li>
+                    
                     <li>
                         <a href=<?php echo InfoVar::show('whatsapp'); ?> target="_blank">
                             <button class="flex flex-row gap-2 items-center justify-center rounded-full py-1 px-8 md:py-2 md:px-8 xl:py-2 xl:px-8 bg-indigo-900 hover:bg-indigo-950 transition-all text-white text-sm md:text-lg uppercase">
@@ -52,7 +52,6 @@
                         </a>
                     </li>
 
-                    </li>
                 </ul>
                 <div class="flex items-center gap-x-4 md:hidden" id="mobile-menu-hamburger">
                     <div class="z-20 block md:hidden">

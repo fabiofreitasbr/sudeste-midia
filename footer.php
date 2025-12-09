@@ -20,7 +20,8 @@ $logo_footer = $template_uri . '/img/logo_footer.png';
                 <ul class="flex flex-col text-xs font-light 2xl:text-lg">
                     <li class="py-2"><a href="#" class="text-white hover:text-orange-500 uppercase">Início</a></li>
                     <li class="py-2"><a href="#quemsomos" class="text-white hover:text-orange-500 uppercase">Quem Somos</a></li>
-                    <li class="py-2"><a href="#servicos" class="text-white hover:text-orange-500 uppercase">Produtos</a></li>
+                    <li class="py-2"><a href="#servicos" class="text-white hover:text-orange-500 uppercase">Serviços</a></li>
+                    <li class="py-2"><a href="#clientes" class="text-white hover:text-orange-500 uppercase">Clientes</a></li>
                     <li class="py-2"><a href="#contato" class="text-white hover:text-orange-500 uppercase">Contato</a></li>
                 </ul>
             </div>
