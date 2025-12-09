@@ -9,11 +9,11 @@ $argVar = array(
     'email' => 'mailto:contato@sudestemidia.com.br',
     'emailShow' => 'contato@sudestemidia.com.br',
 
-    'phone' => 'tel:+5521999999999',
-    'phoneShow' => '(21) 99999-9999',
+    'phone' => 'tel:+5521982012209',
+    'phoneShow' => '(21) 98201-2209',
 
-    'whatsapp' => 'https://wa.me/5521999999999',
-    'whatsappShow' => '(21) 99999-9999',
+    'whatsapp' => 'https://wa.me/5521982012209',
+    'whatsappShow' => '(21) 98201-2209',
 
     'facebook' => 'https://www.facebook.com',
     'facebookShow' => '',
