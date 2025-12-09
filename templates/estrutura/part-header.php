@@ -71,7 +71,7 @@
         <ul class="flex flex-col gap-5 xl:gap-10 text-xl font-medium">
             <li class="">
                 <a
-                    onClick={menuBurger}
+                    onclick="menuBurger()"
                     href="#"
                     class="text-white hover:text-indigo-900">
                     Início
@@ -79,7 +79,7 @@
             </li>
             <li class="">
                 <a
-                    onClick={menuBurger}
+                    onclick="menuBurger()"
                     href="#quemsomos"
                     class="text-white hover:text-indigo-900">
                     Quem Somos
@@ -87,7 +87,7 @@
             </li>
             <li class="">
                 <a
-                    onClick={menuBurger}
+                    onclick="menuBurger()"
                     href="#servicos"
                     class="text-white hover:text-indigo-900">
                     Serviços
@@ -95,7 +95,7 @@
             </li>
             <li class="">
                 <a
-                    onClick={menuBurger}
+                    onclick="menuBurger()"
                     href="#clientes"
                     class="text-white hover:text-indigo-900">
                     Clientes
@@ -103,7 +103,7 @@
             </li>
             <li class="">
                 <a
-                    onClick={menuBurger}
+                    onclick="menuBurger()"
                     href="#contato"
                     class="text-white hover:text-indigo-900">
                     Contato
@@ -117,14 +117,24 @@
         const hamburger = document.getElementById('mobile-menu-hamburger');
         const mobileMenu = document.getElementById('header-bar-mobile');
         const hamburgerIcon = hamburger.querySelector('.hamburger');
+        const menuLinks = mobileMenu.querySelectorAll('a'); // pega todos os links do menu mobile
 
-        hamburger.addEventListener('click', function() {
-            // alterna o menu
+        function toggleMenu() {
             mobileMenu.classList.toggle('-right-full');
             mobileMenu.classList.toggle('right-0');
-
-            // animação do ícone (se estiver usando hamburgers.css)
             hamburgerIcon.classList.toggle('is-active');
+        }
+
+        // abre/fecha ao clicar no hambúrguer
+        hamburger.addEventListener('click', function() {
+            toggleMenu();
+        });
+
+        // fecha ao clicar em qualquer link
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                toggleMenu();
+            });
         });
     });
 </script>
