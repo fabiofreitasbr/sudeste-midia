@@ -41,13 +41,13 @@
             perMove: 1,
             perPage: 7,
             type: "loop",
-            gap: '1rem',
+            gap: '4rem',
             arrows: true,
             autoplay: true,
             breakpoints: {
                 500: {
                     perPage: 2.5,
-                    gap: '2.5rem' 
+                    gap: '1rem' 
                 },
                 640: {
                     perPage: 2.5,

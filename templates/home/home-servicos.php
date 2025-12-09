@@ -7,7 +7,7 @@
         </div>
 
         <div class="w-full">
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 2xl:gap-8 px-2 md:justify-between text-lg md:text-xl lg:text-base xl:text-xl lg:mx-[6rem]">
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 md:grid-cols-6 gap-4  2xl:gap-8 px-2 md:justify-between text-lg md:text-xl lg:text-base xl:text-xl lg:mx-[6rem]">
                 <?php foreach (array_slice($contentMidias, 0, 12) as $serviceSingle): ?>
                     <div class="relative">
                         <img src="<?= $serviceSingle['img']; ?>" alt="<?= $serviceSingle['slug']; ?>" class="w-full" />
