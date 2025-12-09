@@ -176,9 +176,9 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
     
 <div class=" bg-cover bg-center bg-no-repeat bg-size h-[30rem] sm:h-[28rem] md:h-[32rem] lg:h-[30rem] xl:h-[38rem] 2xl:h-[50rem] relative flex items-center" style="background-image: url(&#39;http://localhost:8888/clientes/sudeste/wp-content/themes/sudeste-midia/img/banner-principal.png&#39;);">
 
-    <div class="absolute bottom-0 md:bottom-auto top-0 md:h-full w-full flex justify-center md:justify-start md:items-center">
+    <div class="absolute bottom-0 md:bottom-auto top-0 md:h-full w-full flex justify-center md:justify-start md:items-center md:pl-4 lg:pl-6 xl:pl-8">
 
-        <div class="text-white flex flex-row md:flex-col md:absolute gap-6 mb-6 md:mb-0  space-x-2 sm:space-x-4 justify-end items-end lg:justify-start ">
+        <div class="text-white flex flex-row md:flex-col md:absolute gap-6 mb-6 md:mb-0 justify-end items-end lg:justify-start ">
             <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram hover:text-orange-500 text-2xl" aria-hidden="true"></i></a>
             <a href="http://localhost:8888/clientes/sudeste/href=%22https://maps.app.goo.gl/6sEZ5vW6L18dThQt7%22" target="_blank"><i class="fa fa-location-dot hover:text-orange-500 text-2xl" aria-hidden="true"></i></a>
         </div>
@@ -443,24 +443,29 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
             perMove: 1,
             perPage: 7,
             type: "loop",
-            gap: '4rem',
+            gap: '1rem',
             arrows: true,
             autoplay: true,
             breakpoints: {
                 500: {
-                    perPage: 2.5
+                    perPage: 2.5,
+                    gap: '2.5rem' 
                 },
                 640: {
-                    perPage: 2.5
+                    perPage: 2.5,
+                    gap: '3rem' 
                 },
                 768: {
-                    perPage: 3
+                    perPage: 3,
+                    gap: '3rem' 
                 },
                 1024: {
-                    perPage: 4
+                    perPage: 4,
+                    gap: '3.5rem' 
                 },
                 1536: {
-                    perPage: 5
+                    perPage: 5,
+                    gap: '4rem' 
                 },
             },
         }).mount();

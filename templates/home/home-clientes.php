@@ -41,24 +41,29 @@
             perMove: 1,
             perPage: 7,
             type: "loop",
-            gap: '4rem',
+            gap: '1rem',
             arrows: true,
             autoplay: true,
             breakpoints: {
                 500: {
-                    perPage: 2.5
+                    perPage: 2.5,
+                    gap: '2.5rem' 
                 },
                 640: {
-                    perPage: 2.5
+                    perPage: 2.5,
+                    gap: '3rem' 
                 },
                 768: {
-                    perPage: 3
+                    perPage: 3,
+                    gap: '3rem' 
                 },
                 1024: {
-                    perPage: 4
+                    perPage: 4,
+                    gap: '3.5rem' 
                 },
                 1536: {
-                    perPage: 5
+                    perPage: 5,
+                    gap: '4rem' 
                 },
             },
         }).mount();
