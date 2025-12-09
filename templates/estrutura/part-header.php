@@ -3,14 +3,14 @@
     <div class="container mx-auto px-4">
         <div class="flex flex-row justify-between items-center h-auto">
             <div class="logo z-20 ">
-                <a href="<?php echo get_bloginfo('url'); ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo_sudeste.png" class="h-[3rem] md:bottom-2 md:h-12 lg:h-16 w-auto xl:h-full" alt="Logo - Sudeste Mídia" />
+                <a href="#">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo_sudeste.png" class="h-12 md:bottom-2 md:h-12 lg:h-16 w-auto xl:h-full" alt="Logo - Sudeste Mídia" />
                 </a>
             </div>
             <nav class=" flex items-center gap-x-4 lg:gap-x-10 ">
                 <ul class="hidden md:flex gap-2  lg:gap-6 2xl:gap-8 text-xs md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-normal">
                     <li>
-                        <a href="<?php echo get_bloginfo('url'); ?>" class="text-white hover:text-indigo-900">
+                        <a href="#" class="text-white hover:text-indigo-900">
                             Início
                         </a>
                     </li>
@@ -72,7 +72,7 @@
         <ul class="flex flex-col gap-5 xl:gap-10 text-xl font-medium">
             <li class="">
                 <a
-                    href="/"
+                    href="#"
                     class="text-white hover:text-indigo-900">
                     Início
                 </a>
@@ -93,14 +93,14 @@
             </li>
             <li class="">
                 <a
-                    href="/clientes"
+                    href="#clientes"
                     class="text-white hover:text-indigo-900">
-                    Marcas
+                    Clientes
                 </a>
             </li>
             <li class="">
                 <a
-                    href="/contato"
+                    href="#contato"
                     class="text-white hover:text-indigo-900">
                     Contato
                 </a>

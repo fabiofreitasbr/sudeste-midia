@@ -12,7 +12,7 @@
                 <div class="splide__track">
                     <ul class="splide__list">
                         <?php foreach ($clientes as $serviceSingle): ?>
-                            <li class="splide__slide bg-white rounded-lg p-6 md:w-[8rem] md:h-[10rem] flex justify-center items-center">
+                            <li class="splide__slide bg-white rounded-lg p-6 md:w-32 md:h-40 flex justify-center items-center">
                                 <img src="<?= $serviceSingle['img']; ?>" alt="<?= $serviceSingle['slug']; ?>" class="md:w-100" />
                             </li>
                         <?php endforeach; ?>
@@ -22,14 +22,17 @@
 
         </div>
     </div>
-    <!-- Botões laterais -->
-    <button class=" splide__arrow--prev absolute -left-4 top-1/2 -translate-y-1/2  text-indigo-900 transition">
+    <!-- Botões laterais 
+       <button class=" splide__arrow--prev absolute -left-4 top-1/2 -translate-y-1/2  text-indigo-900 transition">
         <i class="fa fa-chevron-left w-5 h-5"></i>
     </button>
 
     <button class=" splide__arrow--next absolute -right-4 top-1/2 -translate-y-1/2 text-indigo-900 transition">
         <i class="fa fa-chevron-right w-5 h-5"></i>
     </button>
+    
+    -->
+ 
 </div>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -39,7 +42,7 @@
             perPage: 7,
             type: "loop",
             gap: '4rem',
-            arrows: false,
+            arrows: true,
             autoplay: true,
             breakpoints: {
                 500: {

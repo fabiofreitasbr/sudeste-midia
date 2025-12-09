@@ -18,7 +18,7 @@ $logo_footer = $template_uri . '/img/logo_footer.png';
                     <h3 class="text-white text-base md:text-2xl font-bold py-2 uppercase">Menu</h3>
                 </div>
                 <ul class="flex flex-col text-xs font-light 2xl:text-lg">
-                    <li class="py-2"><a href="<?php echo get_bloginfo('url'); ?>" class="text-white hover:text-orange-500 uppercase">Início</a></li>
+                    <li class="py-2"><a href="#" class="text-white hover:text-orange-500 uppercase">Início</a></li>
                     <li class="py-2"><a href="#quemsomos" class="text-white hover:text-orange-500 uppercase">Quem Somos</a></li>
                     <li class="py-2"><a href="#servicos" class="text-white hover:text-orange-500 uppercase">Produtos</a></li>
                     <li class="py-2"><a href="#contato" class="text-white hover:text-orange-500 uppercase">Contato</a></li>

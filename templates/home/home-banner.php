@@ -2,9 +2,9 @@
 $template_uri = get_template_directory_uri();
 ?>
 
-<div class=" bg-cover bg-center bg-no-repeat bg-size h-[30rem] sm:h-[28rem] md:h-[32rem] lg:h-[30rem] xl:h-[38rem] 2xl:h-[50rem] relative flex items-center" style="background-image: url('<?php echo $template_uri; ?>/img/banner-principal.png');">
+<div class=" bg-cover bg-center bg-no-repeat bg-size h-120 sm:h-112 md:h-128 lg:h-120 xl:h-152 2xl:h-200 relative flex items-center" style="background-image: url('<?php echo $template_uri; ?>/img/banner-principal.png');">
 
-    <div class="absolute bottom-0 md:bottom-auto top-0 md:h-full w-full flex justify-center md:justify-start md:items-center md:pl-4 lg:pl-6 xl:pl-8">
+    <div class="absolute bottom-0 md:bottom-auto top-0 md:h-full w-full flex justify-center md:justify-start md:items-center">
 
         <div class="text-white flex flex-row md:flex-col md:absolute gap-6 mb-6 md:mb-0  space-x-2 sm:space-x-4 justify-end items-end lg:justify-start ">
             <a href="<?php echo InfoVar::show('instagram'); ?>" target="_blank"><i class="fa fa-instagram hover:text-orange-500 text-2xl"></i></a>
