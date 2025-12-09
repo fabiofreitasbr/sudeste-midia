@@ -44,13 +44,14 @@
                     </li>
 
                     <li>
-                        <a href=<?php echo InfoVar::show('whatsapp'); ?> target="_blank">
-                            <button class="flex flex-row gap-2 items-center justify-center rounded-full py-1 px-8 md:py-2 md:px-8 xl:py-2 xl:px-8 bg-indigo-900 hover:bg-indigo-950 transition-all text-white text-sm md:text-lg uppercase">
-                                <i class="fa fa-phone w-4 h-4 md:w-8 md:h-8  "></i>
-                                <span class="hidden xl:block"><?php echo InfoVar::show('whatsappShow'); ?> </span>
+                        <a href="<?php echo InfoVar::show('whatsapp'); ?>" target="_blank">
+                            <button class="flex items-center justify-center gap-2 rounded-full py-2 px-8 bg-indigo-900 hover:bg-indigo-950 transition-all text-white text-sm md:text-lg uppercase">
+                                <i class="fa fa-phone text-white text-lg flex items-center justify-center leading-none"></i>
+                                <span class="hidden xl:block"><?php echo InfoVar::show('whatsappShow'); ?></span>
                             </button>
                         </a>
                     </li>
+
 
                 </ul>
                 <div class="flex items-center gap-x-4 md:hidden" id="mobile-menu-hamburger">
