@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+@theme {
+  --font-bodoni: var(--font-bodoni);
+
+  --color-indigo-900: #382359;
+  --color-orange-500: #EE6E2C;
+  --color-true-gray-700: #343434;
+}
+
+@font-face {
+    font-family: 'FontePrincipal';
+    src:  url('../fonts/syne/syne-font.woff2') format('woff2'),
+    url('../fonts/syne/syne-font.otf') format('otf'), 
+    url('../fonts/syne/syne-font.ttf') format('truetype'),
+         url('../fonts/syne/syne-font.eot') format('eot');
+}
+
+.campo-input {
+    @apply  md:col-span-2 bg-zinc-200 text-base lg:text-lg 2xl:text-xl font-light py-3  lg:py-4 px-4 md:px-4 lg:px-5 rounded-md md:rounded-lg block w-full 
+}
+.campo-input-2 {
+    @apply  md:col-span-1 bg-zinc-200 text-base lg:text-lg 2xl:text-xl font-light py-3  lg:py-4 px-4 md:px-4 lg:px-5 rounded-md md:rounded-lg block w-full 
+}
+.campo-area{
+    @apply md:col-span-2 bg-zinc-200 text-base lg:text-lg 2xl:text-xl font-light py-3 lg:py-4 block w-full rounded-xl px-4 resize-none
+}
+
+.submit-botao {
+    @apply  my-3 flex place-items-center gap-2 md:gap-4 bg-indigo-900 hover:bg-indigo-800 transition-all rounded-md md:rounded-xl text-white text-base md:text-3xl lg:text-2xl px-4 py-2 md:px-8 lg:px-10 lg:py-2 font-medium uppercase
+}
+
+.hamburger {
+    padding-top: 2px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+}
+
+.hamburger:hover {
+    opacity: 0.9;
+}
+
+.hamburger.is-active:hover {
+    opacity: 0.9;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+    @apply bg-white;
+}
+
+.hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger-inner {
+    display: block;
+    top: 50%;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    @apply bg-white;
+    width: 40px;
+    height: 4px;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+    content: "";
+    display: block;
+}
+
+.hamburger-inner::before {
+    top: -10px;
+}
+
+.hamburger-inner::after {
+    bottom: -10px;
+}
+
+.hamburger--squeeze .hamburger-inner {
+    transition-duration: 0.075s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--squeeze .hamburger-inner::before {
+    transition:
+        top 0.075s 0.12s ease,
+        opacity 0.075s ease;
+}
+
+.hamburger--squeeze .hamburger-inner::after {
+    transition:
+        bottom 0.075s 0.12s ease,
+        transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--squeeze.is-active .hamburger-inner {
+    transform: rotate(45deg);
+    transition-delay: 0.12s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hamburger--squeeze.is-active .hamburger-inner::before {
+    top: 0;
+    opacity: 0;
+    transition:
+        top 0.075s ease,
+        opacity 0.075s 0.12s ease;
+}
+
+.hamburger--squeeze.is-active .hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+    transition:
+        bottom 0.075s ease,
+        transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
