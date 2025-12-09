@@ -42,7 +42,7 @@
                             Contato
                         </a>
                     </li>
-                    
+
                     <li>
                         <a href=<?php echo InfoVar::show('whatsapp'); ?> target="_blank">
                             <button class="flex flex-row gap-2 items-center justify-center rounded-full py-1 px-8 md:py-2 md:px-8 xl:py-2 xl:px-8 bg-indigo-900 hover:bg-indigo-950 transition-all text-white text-sm md:text-lg uppercase">
@@ -71,6 +71,7 @@
         <ul class="flex flex-col gap-5 xl:gap-10 text-xl font-medium">
             <li class="">
                 <a
+                    onClick={menuBurger}
                     href="#"
                     class="text-white hover:text-indigo-900">
                     Início
@@ -78,6 +79,7 @@
             </li>
             <li class="">
                 <a
+                    onClick={menuBurger}
                     href="#quemsomos"
                     class="text-white hover:text-indigo-900">
                     Quem Somos
@@ -85,6 +87,7 @@
             </li>
             <li class="">
                 <a
+                    onClick={menuBurger}
                     href="#servicos"
                     class="text-white hover:text-indigo-900">
                     Serviços
@@ -92,6 +95,7 @@
             </li>
             <li class="">
                 <a
+                    onClick={menuBurger}
                     href="#clientes"
                     class="text-white hover:text-indigo-900">
                     Clientes
@@ -99,6 +103,7 @@
             </li>
             <li class="">
                 <a
+                    onClick={menuBurger}
                     href="#contato"
                     class="text-white hover:text-indigo-900">
                     Contato
