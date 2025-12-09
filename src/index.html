@@ -71,7 +71,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
         <div class="flex flex-row justify-between items-center h-auto">
             <div class="logo z-20 ">
                 <a href="http://localhost:8888/clientes/sudeste">
-                    <img src="./index_files/logo_sudeste.png" class="h-12 md:bottom-2 md:h-12 lg:h-16 w-auto xl:h-full" alt="Logo - Sudeste Mídia">
+                    <img src="./index_files/logo_sudeste.png" class="h-8 md:bottom-2 md:h-12 lg:h-16 w-auto xl:h-full" alt="Logo - Sudeste Mídia">
                 </a>
             </div>
             <nav class=" flex items-center gap-x-4 lg:gap-x-10 ">
@@ -129,7 +129,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
     <div class="container mx-auto">
         <ul class="flex flex-col gap-5 xl:gap-10 text-xl font-medium">
             <li class="">
-                <a href="#" class="text-white hover:text-indigo-900">
+                <a href="/" class="text-white hover:text-indigo-900">
                     Início
                 </a>
             </li>
@@ -161,14 +161,24 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
         const hamburger = document.getElementById('mobile-menu-hamburger');
         const mobileMenu = document.getElementById('header-bar-mobile');
         const hamburgerIcon = hamburger.querySelector('.hamburger');
+        const menuLinks = mobileMenu.querySelectorAll('a'); // pega todos os links do menu mobile
 
-        hamburger.addEventListener('click', function() {
-            // alterna o menu
+        function toggleMenu() {
             mobileMenu.classList.toggle('-right-full');
             mobileMenu.classList.toggle('right-0');
-
-            // animação do ícone (se estiver usando hamburgers.css)
             hamburgerIcon.classList.toggle('is-active');
+        }
+
+        // abre/fecha ao clicar no hambúrguer
+        hamburger.addEventListener('click', function() {
+            toggleMenu();
+        });
+
+        // fecha ao clicar em qualquer link
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                toggleMenu();
+            });
         });
     });
 </script>	<main>

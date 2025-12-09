@@ -4,7 +4,7 @@
         <div class="flex flex-row justify-between items-center h-auto">
             <div class="logo z-20 ">
                 <a href="#">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo_sudeste.png" class="h-12 md:bottom-2 md:h-12 lg:h-16 w-auto xl:h-full" alt="Logo - Sudeste Mídia" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo_sudeste.png" class="h-8 md:bottom-2 md:h-12 lg:h-16 w-auto xl:h-full" alt="Logo - Sudeste Mídia" />
                 </a>
             </div>
             <nav class=" flex items-center gap-x-4 lg:gap-x-10 ">
@@ -72,7 +72,7 @@
             <li class="">
                 <a
                     onclick="menuBurger()"
-                    href="#"
+                    href="/"
                     class="text-white hover:text-indigo-900">
                     Início
                 </a>
